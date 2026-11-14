@@ -1,0 +1,5 @@
+# Simulation build outputs (regenerate with `make sim`)
+alu_sim
+*.vcd
+*.vvp
+.DS_Store

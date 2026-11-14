@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="468" viewBox="0 0 1280 468" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="700" fill="#1f2328" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">4-bit ALU: directed test waveform (8 operations + flag edge cases)</text>
+<text x="24" y="58" font-size="13" fill="#656d76" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">Combinational design: outputs settle as soon as the inputs change. Every step below is checked by the testbench, plus an exhaustive sweep of all 2048 input combinations.</text>
+<rect x="150.0" y="80" width="92.2" height="36" fill="#ddf4ff" stroke="#e6e8eb"/>
+<text x="196.1" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">ADD</text>
+<text x="196.1" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 + 3 = 8</text>
+<line x1="150.0" y1="116" x2="150.0" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="242.2" y="80" width="92.2" height="36" fill="#f6f8fa" stroke="#e6e8eb"/>
+<text x="288.2" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">SUB</text>
+<text x="288.2" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 − 3 = 2</text>
+<line x1="242.2" y1="116" x2="242.2" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="334.3" y="80" width="92.2" height="36" fill="#ddf4ff" stroke="#e6e8eb"/>
+<text x="380.4" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">AND</text>
+<text x="380.4" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 &amp; 3 = 1</text>
+<line x1="334.3" y1="116" x2="334.3" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="426.5" y="80" width="92.2" height="36" fill="#f6f8fa" stroke="#e6e8eb"/>
+<text x="472.6" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">OR</text>
+<text x="472.6" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 | 3 = 7</text>
+<line x1="426.5" y1="116" x2="426.5" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="518.7" y="80" width="92.2" height="36" fill="#ddf4ff" stroke="#e6e8eb"/>
+<text x="564.8" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">XOR</text>
+<text x="564.8" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 ^ 3 = 6</text>
+<line x1="518.7" y1="116" x2="518.7" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="610.8" y="80" width="92.2" height="36" fill="#f6f8fa" stroke="#e6e8eb"/>
+<text x="656.9" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">NOT A</text>
+<text x="656.9" y="110" font-size="11" fill="#1f2328" text-anchor="middle">~5 = 10</text>
+<line x1="610.8" y1="116" x2="610.8" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="703.0" y="80" width="92.2" height="36" fill="#ddf4ff" stroke="#e6e8eb"/>
+<text x="749.1" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">INC A</text>
+<text x="749.1" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 + 1 = 6</text>
+<line x1="703.0" y1="116" x2="703.0" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="795.2" y="80" width="92.2" height="36" fill="#f6f8fa" stroke="#e6e8eb"/>
+<text x="841.2" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">DEC A</text>
+<text x="841.2" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 − 1 = 4</text>
+<line x1="795.2" y1="116" x2="795.2" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="887.3" y="80" width="92.2" height="36" fill="#ddf4ff" stroke="#e6e8eb"/>
+<text x="933.4" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">ADD</text>
+<text x="933.4" y="110" font-size="11" fill="#1f2328" text-anchor="middle">15 + 1 = 0</text>
+<line x1="887.3" y1="116" x2="887.3" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="979.5" y="80" width="92.2" height="36" fill="#f6f8fa" stroke="#e6e8eb"/>
+<text x="1025.6" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">SUB</text>
+<text x="1025.6" y="110" font-size="11" fill="#1f2328" text-anchor="middle">5 − 5 = 0</text>
+<line x1="979.5" y1="116" x2="979.5" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="1071.7" y="80" width="92.2" height="36" fill="#ddf4ff" stroke="#e6e8eb"/>
+<text x="1117.8" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">SUB</text>
+<text x="1117.8" y="110" font-size="11" fill="#1f2328" text-anchor="middle">3 − 5 = 14</text>
+<line x1="1071.7" y1="116" x2="1071.7" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<rect x="1163.8" y="80" width="92.2" height="36" fill="#f6f8fa" stroke="#e6e8eb"/>
+<text x="1209.9" y="95" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">DEC A</text>
+<text x="1209.9" y="110" font-size="11" fill="#1f2328" text-anchor="middle">0 − 1 = 15</text>
+<line x1="1163.8" y1="116" x2="1163.8" y2="404" stroke="#0969da" stroke-opacity="0.25" stroke-dasharray="3 3"/>
+<text x="150.0" y="426" font-size="11" fill="#656d76" text-anchor="middle">0 ns</text>
+<text x="242.2" y="426" font-size="11" fill="#656d76" text-anchor="middle">10 ns</text>
+<text x="334.3" y="426" font-size="11" fill="#656d76" text-anchor="middle">20 ns</text>
+<text x="426.5" y="426" font-size="11" fill="#656d76" text-anchor="middle">30 ns</text>
+<text x="518.7" y="426" font-size="11" fill="#656d76" text-anchor="middle">40 ns</text>
+<text x="610.8" y="426" font-size="11" fill="#656d76" text-anchor="middle">50 ns</text>
+<text x="703.0" y="426" font-size="11" fill="#656d76" text-anchor="middle">60 ns</text>
+<text x="795.2" y="426" font-size="11" fill="#656d76" text-anchor="middle">70 ns</text>
+<text x="887.3" y="426" font-size="11" fill="#656d76" text-anchor="middle">80 ns</text>
+<text x="979.5" y="426" font-size="11" fill="#656d76" text-anchor="middle">90 ns</text>
+<text x="1071.7" y="426" font-size="11" fill="#656d76" text-anchor="middle">100 ns</text>
+<text x="1163.8" y="426" font-size="11" fill="#656d76" text-anchor="middle">110 ns</text>
+<text x="1256.0" y="426" font-size="11" fill="#656d76" text-anchor="middle">120 ns</text>
+<text x="136" y="155.0" font-size="13" fill="#1f2328" text-anchor="end">opcode[2:0]</text>
+<path d="M150.0,151.0 L155.0,138.0 L237.2,138.0 L242.2,151.0 L237.2,164.0 L155.0,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="196.1" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">000 ADD</text>
+<path d="M242.2,151.0 L247.2,138.0 L329.3,138.0 L334.3,151.0 L329.3,164.0 L247.2,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="288.2" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">001 SUB</text>
+<path d="M334.3,151.0 L339.3,138.0 L421.5,138.0 L426.5,151.0 L421.5,164.0 L339.3,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="380.4" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">010 AND</text>
+<path d="M426.5,151.0 L431.5,138.0 L513.7,138.0 L518.7,151.0 L513.7,164.0 L431.5,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="472.6" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">011 OR</text>
+<path d="M518.7,151.0 L523.7,138.0 L605.8,138.0 L610.8,151.0 L605.8,164.0 L523.7,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="564.8" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">100 XOR</text>
+<path d="M610.8,151.0 L615.8,138.0 L698.0,138.0 L703.0,151.0 L698.0,164.0 L615.8,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="656.9" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">101 NOT</text>
+<path d="M703.0,151.0 L708.0,138.0 L790.2,138.0 L795.2,151.0 L790.2,164.0 L708.0,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="749.1" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">110 INC</text>
+<path d="M795.2,151.0 L800.2,138.0 L882.3,138.0 L887.3,151.0 L882.3,164.0 L800.2,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="841.2" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">111 DEC</text>
+<path d="M887.3,151.0 L892.3,138.0 L974.5,138.0 L979.5,151.0 L974.5,164.0 L892.3,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="933.4" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">000 ADD</text>
+<path d="M979.5,151.0 L984.5,138.0 L1158.8,138.0 L1163.8,151.0 L1158.8,164.0 L984.5,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1071.7" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">001 SUB</text>
+<path d="M1163.8,151.0 L1168.8,138.0 L1251.0,138.0 L1256.0,151.0 L1251.0,164.0 L1168.8,164.0 Z" fill="#ddf4ff" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1209.9" y="155.0" font-size="12" fill="#1f2328" text-anchor="middle">111 DEC</text>
+<rect x="0" y="174" width="1280" height="46" fill="#f6f8fa" fill-opacity="0.6"/>
+<text x="136" y="201.0" font-size="13" fill="#1f2328" text-anchor="end">A[3:0]</text>
+<path d="M150.0,197.0 L155.0,184.0 L882.3,184.0 L887.3,197.0 L882.3,210.0 L155.0,210.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="518.7" y="201.0" font-size="12" fill="#1f2328" text-anchor="middle">0101 (5)</text>
+<path d="M887.3,197.0 L892.3,184.0 L974.5,184.0 L979.5,197.0 L974.5,210.0 L892.3,210.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="933.4" y="201.0" font-size="12" fill="#1f2328" text-anchor="middle">1111 (15)</text>
+<path d="M979.5,197.0 L984.5,184.0 L1066.7,184.0 L1071.7,197.0 L1066.7,210.0 L984.5,210.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1025.6" y="201.0" font-size="12" fill="#1f2328" text-anchor="middle">0101 (5)</text>
+<path d="M1071.7,197.0 L1076.7,184.0 L1158.8,184.0 L1163.8,197.0 L1158.8,210.0 L1076.7,210.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1117.8" y="201.0" font-size="12" fill="#1f2328" text-anchor="middle">0011 (3)</text>
+<path d="M1163.8,197.0 L1168.8,184.0 L1251.0,184.0 L1256.0,197.0 L1251.0,210.0 L1168.8,210.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1209.9" y="201.0" font-size="12" fill="#1f2328" text-anchor="middle">0000 (0)</text>
+<text x="136" y="247.0" font-size="13" fill="#1f2328" text-anchor="end">B[3:0]</text>
+<path d="M150.0,243.0 L155.0,230.0 L882.3,230.0 L887.3,243.0 L882.3,256.0 L155.0,256.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="518.7" y="247.0" font-size="12" fill="#1f2328" text-anchor="middle">0011 (3)</text>
+<path d="M887.3,243.0 L892.3,230.0 L974.5,230.0 L979.5,243.0 L974.5,256.0 L892.3,256.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="933.4" y="247.0" font-size="12" fill="#1f2328" text-anchor="middle">0001 (1)</text>
+<path d="M979.5,243.0 L984.5,230.0 L1158.8,230.0 L1163.8,243.0 L1158.8,256.0 L984.5,256.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1071.7" y="247.0" font-size="12" fill="#1f2328" text-anchor="middle">0101 (5)</text>
+<path d="M1163.8,243.0 L1168.8,230.0 L1251.0,230.0 L1256.0,243.0 L1251.0,256.0 L1168.8,256.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1209.9" y="247.0" font-size="12" fill="#1f2328" text-anchor="middle">0000 (0)</text>
+<rect x="0" y="266" width="1280" height="46" fill="#f6f8fa" fill-opacity="0.6"/>
+<text x="136" y="293.0" font-size="13" fill="#1f2328" text-anchor="end">result[3:0]</text>
+<path d="M150.0,289.0 L155.0,276.0 L237.2,276.0 L242.2,289.0 L237.2,302.0 L155.0,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="196.1" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">1000 (8)</text>
+<path d="M242.2,289.0 L247.2,276.0 L329.3,276.0 L334.3,289.0 L329.3,302.0 L247.2,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="288.2" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0010 (2)</text>
+<path d="M334.3,289.0 L339.3,276.0 L421.5,276.0 L426.5,289.0 L421.5,302.0 L339.3,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="380.4" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0001 (1)</text>
+<path d="M426.5,289.0 L431.5,276.0 L513.7,276.0 L518.7,289.0 L513.7,302.0 L431.5,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="472.6" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0111 (7)</text>
+<path d="M518.7,289.0 L523.7,276.0 L605.8,276.0 L610.8,289.0 L605.8,302.0 L523.7,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="564.8" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0110 (6)</text>
+<path d="M610.8,289.0 L615.8,276.0 L698.0,276.0 L703.0,289.0 L698.0,302.0 L615.8,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="656.9" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">1010 (10)</text>
+<path d="M703.0,289.0 L708.0,276.0 L790.2,276.0 L795.2,289.0 L790.2,302.0 L708.0,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="749.1" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0110 (6)</text>
+<path d="M795.2,289.0 L800.2,276.0 L882.3,276.0 L887.3,289.0 L882.3,302.0 L800.2,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="841.2" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0100 (4)</text>
+<path d="M887.3,289.0 L892.3,276.0 L1066.7,276.0 L1071.7,289.0 L1066.7,302.0 L892.3,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="979.5" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">0000 (0)</text>
+<path d="M1071.7,289.0 L1076.7,276.0 L1158.8,276.0 L1163.8,289.0 L1158.8,302.0 L1076.7,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1117.8" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">1110 (14)</text>
+<path d="M1163.8,289.0 L1168.8,276.0 L1251.0,276.0 L1256.0,289.0 L1251.0,302.0 L1168.8,302.0 Z" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="1209.9" y="293.0" font-size="12" fill="#1f2328" text-anchor="middle">1111 (15)</text>
+<text x="136" y="339.0" font-size="13" fill="#1f2328" text-anchor="end">carry</text>
+<rect x="242.2" y="322.0" width="92.2" height="26" fill="#1a7f37" fill-opacity="0.10"/>
+<rect x="795.2" y="322.0" width="276.5" height="26" fill="#1a7f37" fill-opacity="0.10"/>
+<path d="M150.0,348.0 L242.2,348.0 L242.2,322.0 L334.3,322.0 L334.3,348.0 L795.2,348.0 L795.2,322.0 L1071.7,322.0 L1071.7,348.0 L1256.0,348.0" fill="none" stroke="#1a7f37" stroke-width="2" stroke-linejoin="round"/>
+<rect x="0" y="358" width="1280" height="46" fill="#f6f8fa" fill-opacity="0.6"/>
+<text x="136" y="385.0" font-size="13" fill="#1f2328" text-anchor="end">zero</text>
+<rect x="887.3" y="368.0" width="184.3" height="26" fill="#1a7f37" fill-opacity="0.10"/>
+<path d="M150.0,394.0 L887.3,394.0 L887.3,368.0 L1071.7,368.0 L1071.7,394.0 L1256.0,394.0" fill="none" stroke="#1a7f37" stroke-width="2" stroke-linejoin="round"/>
+<line x1="150" y1="116" x2="150" y2="404" stroke="#e6e8eb"/>
+</svg>
